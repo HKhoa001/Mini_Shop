@@ -1,46 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
     list-style: none;
     text-decoration: none;
 }
-.container{
-    max-width: 1200px;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    padding: 0;
+}
+
+
+.container {
+    max-width: 2000px;
     margin: 0 auto;
     padding: 0 16px;
 }
-.logo{
-    width: 15%;
-    float: left;
+
+.menu-main,
+.navigation ul,
+.account ul,
+.search-account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.logo img{
-    width: 100%;
-    float: left;
+.menu-main {
+    position: relative;
+    height: 80px;
+    border-bottom: 1px solid #d1d0d0;
 }
-.menu{
-    /* line-height: 80%; */
+
+.navigation ul li {
+    font-size: 18px;
+    margin-left: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+img.logo {
+    height: auto;
+    width: 225px;
+}
+
+
+.search-main {
+    height: 40px;
+    width: 360px;
+    outline: none;
+    border: 1px solid #e2e2e2;
+    border-radius: 7px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.search-main::placeholder {
+    color: #a09e9e;
+    text-transform: uppercase;
+}
+
+.account ul {
     display: flex;
-}
-.menu ul{
-    display: flex;  
-    justify-content: space-between;
     align-items: center;
-    /* flex: 1; */
+    justify-content: space-between;
 }
-.menu ul li{
-    display: inline;
-    padding: 1%;
-    font-weight: bold;
+
+.search-account {
+    gap: 100px;
 }
-.others{
-    display: flex;
-    flex: 1;
-    line-height: 40px;
-    display: inline;
-    padding: 1%;
-    float: right;
+
+.account ul {
+    gap: 30px;
+}
+
+.account i {
+    font-size: 25px;
+    color: #7c7c7c;
+    cursor: pointer;
 }
