@@ -1,71 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Document</title>
+    <title>MINI SHOP</title>
 </head>
-
 <body>
-    <section class="navbar">
+    <header>
         <div class="container">
             <div class="menu-main">
-                <div class="logo">
-                    <a href="#" title="Logo">
-                        <img src="Anh\logo.png" alt="Logo_miniShop" class="img-responsive">
+                <div class="navigation">
+                    <ul>
+                        <li>Nữ</li>
+                        <li>Nam</li>
+                        <li>Trẻ Em</li>
+                        <li style="color: red;">Sale Tháng 12</li>
+                        <li>Bộ Sưu Tập</li>
+                        <li>Về Chung Tôi</li>
+                    </ul>
+                </div>
+                <div class="img">
+                    <a href="#">
+                        <img src="images\logo.png" alt="logo" class="logo">
                     </a>
                 </div>
-                <div class="menu">
-                    <ul>
-                        <li class="navigation">
-                            <ul>
-                                <li>NỮ</li>
-                                <li>NAM</li>
-                                <li>TRẺ EM</li>
-                                <li>SHALE THÁNG 12</li>
-                                <li>BỘ SƯU TẬP</li>
-                                <li>VỀ CHÚNG TÔI</li>
-                            </ul>
-                        </li>
-                        <li class="search">
-                            <input type="text" name="" id="">
-                        </li>
-                    </ul>
-                    <!-- <div class="link">
-                    <ul>
-                        <li>NỮ</li>
-                        <li>NAM</li>
-                        <li>TRẺ EM</li>
-                        <li>SHALE THÁNG 12</li>
-                        <li>BỘ SƯU TẬP</li>
-                        <li>VỀ CHÚNG TÔI</li>
-                    </ul>
-                   </div>
-                    <div class="others">
-                        <!-- <ul>
-                            <li>
-                                <form action="#" method="POST">
-                                    <input type="search" name="search" placeholder="Nhập Tên Sản Phẩm.." required>
-                                    <input type="submit" name="submit" value="Tìm Kiếm" class="btn btn-primary">
-                                </form>
-                            </li>
-                            <li><i class='bx bx-headphone'></i></li>
-                            <li><a class="fas fa-user" href=""></a></li>
-                            <li><a class="fas fa-shopping-bag" href=""></a></li>
-                        </ul> -->
-                    <!-- <form action="#" method="POST">
-                            <input type="search" name="search" placeholder="Nhập Tên Sản Phẩm.." required>
-                            <input type="submit" name="submit" value="Tìm Kiếm" class="btn btn-primary">
-                        </form> -->
-                </div> 
+                <div class="search-account">
+                    <form class="search">
+                        <input type="text" class="search-main" placeholder="Tìm kiếm sản phẩm">
+                    </form>
+
+                    <div class="account">
+                        <ul>
+                            <li><i class='bx bx-headphone' ></i></li>
+                            <li><i class='bx bx-user'></i></li>
+                            <li><i class='bx bx-shopping-bag' ></i></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="sale-top">
+                <ul>
+                    <li style="background:#D73831"><a style="margin: 0 auto;">SALE OFF 50%</a></li>
+                    <li style="background:#DC633A"><a style="margin: 0 auto;">SALE OFF 30%</a></li>
+                    <li style="background:#D73831"><a style="margin: 0 auto;">LAST SALE TỪ 100K</a></li>
+                </ul>
+            </div>
+            <div class="image-grid">
+                <img src="images\slider01.webp" alt="" class="slider">
+                <img src="images/slider03.jpg" alt="" class="slider">
+                <img src="images/slider04.jpg" alt="" class="slider">
+                <img src="images/slider05.jpg" alt="" class="slider">
+            </div>
         </div>
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    </main>
+    <footer></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          autoplay: {
+        delay: 2000,
+      },
+        });
+    </script>
 </body>
-
 </html>
