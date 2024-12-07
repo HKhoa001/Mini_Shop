@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./images/logowebsite.jpg" type="image/x-icon">
     <title>MINI SHOP</title>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -33,9 +36,9 @@
 
                     <div class="account">
                         <ul>
-                            <li><i class='bx bx-headphone' ></i></li>
+                            <li><i class='bx bx-headphone'></i></li>
                             <li><i class='bx bx-user'></i></li>
-                            <li><i class='bx bx-shopping-bag' ></i></li>
+                            <li class="count-number"><i class='bx bx-shopping-bag'></i> <span class="number-shopping">0</span></li>
                         </ul>
                     </div>
                 </div>
@@ -53,37 +56,34 @@
             </div>
 
             <!-- code swip -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                      <a href="">
-                        <img src="images\slider01.webp" alt="" class="slider">
-                      </a></div>
-                  <!-- <div class="swiper-slide">
-                      <a href="">
-                        <img src="images\slider02.webp" alt="" class="slider">
-                      </a></div>
-                  <div class="swiper-slide">
-                      <a href="">
-                        <img src="images/slider03.jpg" alt="" class="slider">
-                      </a></div>
-                  <div class="swiper-slide">
-                      <a href="">
-                        <img src="images/slider04.jpg" alt="" class="slider">
-                      </a></div>
-                  <div class="swiper-slide">
-                      <a href="">
-                        <img src="images/slider05.jpg" alt="" class="slider">
-                      </a></div>
-                  <div class="swiper-slide">
-                      <a href="">
-                        <img src="images\slider06.webp" alt="" class="slider">
-                      </a></div> -->
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
+             <div class="slider-sipwer">
+                 <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true" autoplay-delay="1500"
+                 autoplay-disable-on-interaction="false"
+                 loop="true">
+                     <swiper-slide><a href="#">
+                             <div class="abs-test-img">
+                                 <img src="images/slider01.webp" alt="" class="slider">
+                             </div>
+                         </a></swiper-slide>
+                     <swiper-slide><a href="#">
+                             <div class="abs-test-img">
+                                 <img src="images/sale001.webp" alt="" class="slider">
+                             </div>
+                         </a></swiper-slide>
+                     <swiper-slide><a href="#">
+                             <div class="abs-test-img">
+                                 <img src="images/office.webp" alt="" class="slider">
+                             </div>
+                         </a></swiper-slide>
+                     <swiper-slide><a href="#">
+                             <div class="abs-test-img">
+                                 <img src="images/hersing.webp" alt="" class="slider">
+                             </div>
+                         </a></swiper-slide>
+     
+                 </swiper-container>
+             </div>
+
 
             <div class="title"><a>New arrival</a></div>
 
@@ -147,15 +147,15 @@
             </div>
 
             <div class="sale">
-                <a href="">
-                    <img src="images\sale01.webp" alt="Ảnh 4" >
+                <a href="#">
+                    <img src="images\sale01.webp" alt="Ảnh 4">
                 </a>
                 <div class="sale-1">
-                    <a href="">
-                        <img src="images\sale02.webp" alt="Ảnh 4" >
+                    <a href="#">
+                        <img src="images\sale02.webp" alt="Ảnh 4">
                     </a>
-                    <a href="">
-                        <img src="images\sale03.jpg" alt="Ảnh 4" >
+                    <a href="#">
+                        <img src="images\sale03.jpg" alt="Ảnh 4">
                     </a>
                 </div>
             </div>
@@ -164,23 +164,15 @@
     </main>
     <footer></footer>
 
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <!-- Swiper JS -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-//     var swiper = new Swiper(".mySwiper", {
-//       navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//       },
-//       autoplay: {
-//     delay: 5000,
-//   },
-//     });
-</script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>\
+    <script src="./main.js"></script>
+   
 </body>
+
 </html>
