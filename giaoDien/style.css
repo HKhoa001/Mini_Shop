@@ -8,7 +8,10 @@
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 
+
+=======
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -23,6 +26,9 @@ ul {
     padding: 0;
 }
 
+<<<<<<< HEAD
+
+=======
 
 .container {
     max-width: 1410px;
@@ -62,6 +68,9 @@ img.logo {
     transform: translate(-50%, -50%);
 }
 
+<<<<<<< HEAD
+
+=======
 
 .search-main {
     height: 40px;
@@ -99,6 +108,29 @@ img.logo {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+.count-number {
+    position: relative;
+}
+
+.number-shopping {
+    position: absolute;
+    top: -2px;
+    right: -10px;
+    width: 17px;
+    height: 17px;
+    background-color: red;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    font-size: 14px;
+
+}
+
+
 .sale-top ul {
     height: 40px;
     display: flex;
@@ -116,6 +148,7 @@ img.logo {
     align-items: center;
 }
 
+<<<<<<< HEAD
 img.slider {
     width: 100%;
     height: auto;
@@ -194,6 +227,8 @@ img.BST {
     width: 49%;
     height: auto;
 }
+=======
+
 
 swiper-container.mySwiper {
     border-top-left-radius: 90px;
@@ -225,12 +260,16 @@ swiper-container.mySwiper {
     -ms-transition: all 0.3s ease-in-out 0s;
 }
 
+<<<<<<< HEAD
+
+=======
 
 img.slider {
     border-top-left-radius: 90px;
     border-bottom-right-radius: 90px;
 }
 
+<<<<<<< HEAD
 .count-number {
     position: relative;
 }
@@ -248,5 +287,295 @@ img.slider {
     justify-content: center;
     color: #ffff;
     font-size: 14px;
+
+=======
+.title {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* Tạo 4 cột, mỗi cột có kích thước bằng nhau */
+    grid-gap: 25px;
+    /* Khoảng cách giữa các ô là 25px */
+}
+
+.cart-main {
+    position:relative;
+    width: 256px;
+    height: auto;
+}
+
+.image-cart-2 {
+    display: none;
+    transition: all .3s ease-in-out;
+}
+
+.cart-main:hover .image-cart-1 {
+    display: none;
+}
+
+.cart-main:hover .image-cart-2 {
+    display: block;
+}
+
+.style-cart,
+.price-product {
+    height: 24px;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 16;
+    font-weight: 600;
+    color: #3e3e3f;
+}
+
+.style-cart i{
+    font-size: 18px;
+    color: #6c6d70;
+}
+
+.cart-title h4 {
+    font-size: 14px;
+    font-weight: 100;
+    text-align: left;
+    color: #57585A;
+}
+
+.add-to-cart {
+    width: 32px;
+    height: 32px;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-to-cart i {
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.item-new{
+    position: absolute;
+    background-image:url("images\item_new.png");
+    padding: 7px 18px 7px 15px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    top: 0;
+    left: -7px;
+}
+
+.see-all {
+    width: 100%;
+    height: 47.5px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.see-all h3 {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 13px 24px;
+    font-size: 16px;
+    border: 1px solid #221F20;
+    color: #221F20;
+}
+
+.collection-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px;
+}
+
+.collection {
+    width: 345px;
+    height: auto;
+}
+
+img.BST {
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    width: 96%;
+    height: auto;
+    padding: 0 2% 2% 2%;
+}
+
+.sale {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+img.sale {
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+}
+
+.sale-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.sale-1 a {
+    width: 49%;
+    height: auto;
+}
+
+img.sale1 {
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+hr{
+    margin: 50px 0 ;
+}
+
+.main-footer{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.left-footer{
+    width: 300px;
+    margin-right: 70px;
+}
+
+.top-left,
+.list-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-social{
+    margin: 24px 0 32px 0;
+}
+
+.social-network{
+    width: 30px;
+    height: auto;
+    margin-right: 25px;
+}
+
+.hotline{
+    text-align: center;
+}
+
+.hotline a{
+    background: #221F20;
+    border-radius: 16px 0px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F7F8F9;
+    padding: 12px 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h5{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #221F20;
+    margin-bottom: 20px;
+}
+
+.center-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.left-center{
+    margin-right: 70px;
+}
+
+.left-center ul li a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #57585A;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.right-footer{
+    width: 321px;
+    margin-left: 0px;
+}
+
+.register-form{
+    background: #FFFFFF;
+    border: 6px solid #E7E8E9;
+    border-radius: 56px 0px;
+    padding: 24px 16px;
+    margin-bottom: 32px;
+}
+
+.title-footer{
+    width: 221px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #221F20;
+    margin-bottom: 5px;
+}
+
+.registration_card{
+    display: flex;
+}
+
+.registration_card input{
+    width: 155px;
+    border: 0;
+    border-bottom: 1px solid #BCBDC0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #221F20;
+    padding: 0 0 12px 10px;
+}
+
+.btn-submit input {
+    width: 122px;
+    background: #FFF;
+    border: 1px solid #221F20;
+    box-sizing: border-box;
+    border-radius: 24px 0px;
+    margin-right: 0;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    color: #221F20;
+    padding: 12px 27px;
+}
+
+img.link-white{
+    width: 178px;
+    height: 51px;
+}
+
+h6{
+    margin-top: -30px;
+    font-size: 16px;
+    color: #57585A;
+    text-align: center;
+    font-weight: 100;
 
 }
