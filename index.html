@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="./images/logowebsite.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- link animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>MINI SHOP</title>
 </head>
 
@@ -16,7 +20,16 @@
             <div class="menu-main">
                 <div class="navigation">
                     <ul>
-                        <li>Nữ</li>
+                        <li class="test-hover">Nữ
+                            <div class="block-humen">
+                                <ul>
+                                    <li>ád</li>
+                                    <li>adas</li>
+                                    <li>ádasd</li>
+                                    <li>áda</li>
+                                </ul>
+                            </div>
+                        </li>
                         <li>Nam</li>
                         <li>Trẻ Em</li>
                         <li style="color: red;">Sale Tháng 12</li>
@@ -58,12 +71,9 @@
 
             <!-- code swip -->
             <div class="slider-sipwer">
-                <swiper-container 
-                class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="fale" autoplay-delay="1500"
-                autoplay-disable-on-interaction="false"
-                loop="true"
-                >
-                
+                <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="fale"
+                    autoplay-delay="1500" autoplay-disable-on-interaction="false" loop="true">
+
                     <swiper-slide><a href="#">
                             <div class="abs-test-img">
                                 <img src="images/slider01.webp" alt="" class="slider">
@@ -84,7 +94,7 @@
                                 <img src="images/hersing.webp" alt="" class="slider">
                             </div>
                         </a></swiper-slide>
-    
+
                 </swiper-container>
             </div>
 
@@ -93,6 +103,60 @@
                 <h2>New arrival</h2>
             </div>
 
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3  data-aos="fade-up"">
+                        <div class="product-list">
+                            <div class="cart-main">
+                                <div class="carrt-image-main">
+                                    <div href="#" class="image-cart-1">
+                                        <img src="images\new010.webp" alt="Ảnh 1">
+                                    </div>
+                                    <div href="#" class="image-cart-2">
+                                        <img src="images\new011.webp" alt="Ảnh 1">
+                                    </div>
+                                </div>
+                                <div class="cart-title">
+                                    <div class="style-cart">
+                                        <div class="color">
+                                            <input type="checkbox">
+                                            <input type="checkbox">
+                                        </div>
+                                        <i class='bx bx-heart'></i>
+                                    </div>
+                                    <h4 class="name-cart">Áo sơ mi họa tiết Eclat</h4>
+                                    <div class="price-product">
+                                        <span>1.090.000<sup>đ</sup></span>
+                                        <a class="add-to-cart">
+                                            <i class='bx bx-shopping-bag'></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="name-new">NEW</div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+            <div class="see-all">
+                <h3>Xem tất cả</h3>
+            </div>
+
+            <div class="title"  data-aos="fade-up"><a>BEST SELLER</a></div>
+
             <div class="product-list">
                 <div class="cart-main">
                     <div class="carrt-image-main">
@@ -119,58 +183,6 @@
                             </a>
                         </div>
                     </div>
-                    <div class="item-new">
-                        NEW
-                    </div>
-                </div>
-
-
-                <a href="" class="product">
-                    <img src="images\new020.webp" alt="Ảnh 2">
-                </a>
-                <a href="" class="product">
-                    <img src="images\new020.webp" alt="Ảnh 3">
-                </a>
-                <a href="" class="product">
-                    <img src="images\new020.webp" alt="Ảnh 4">
-                </a>
-                <a href="" class="product">
-                    <img src="images\new020.webp" alt="Ảnh 5">
-                </a>
-            </div>
-
-            <div class="see-all">
-                <h3>Xem tất cả</h3>
-            </div>
-
-            <div class="title"><a>BEST SELLER</a></div>
-
-            <div class="product-list">
-                <div class="cart-main">
-                    <div class="carrt-image-main">
-                        <a href="#" class="image-cart-1">
-                            <img src="images\new010.webp" alt="Ảnh 1">
-                        </a>
-                        <a href="#" class="image-cart-2">
-                            <img src="images\new011.webp" alt="Ảnh 1">
-                        </a>
-                    </div>
-                    <div class="cart-title">
-                        <div class="style-cart">
-                            <div class="color">
-                                <input type="checkbox">
-                                <input type="checkbox">
-                            </div>
-                            <i class='bx bx-heart'></i>
-                        </div>
-                        <h4 class="name-cart">Áo sơ mi họa tiết Eclat</h4>
-                        <div class="price-product">
-                            <span>1.090.000<sup>đ</sup></span>
-                            <a class="add-to-cart">
-                                <i class='bx bx-shopping-bag'></i>
-                            </a>
-                        </div>
-                    </div>
                 </div>
 
                 <a href="" class="product">
@@ -191,7 +203,7 @@
                 <h3>Xem tất cả</h3>
             </div>
 
-            <div class="title"><a>Fall/ Winter New Collection 2024</a></div>
+            <div class="title"  data-aos="fade-up"><a>Fall/ Winter New Collection 2024</a></div>
 
             <div class="collection-list">
                 <a href="" class="collection">
@@ -224,9 +236,8 @@
 
         </div>
     </main>
-
     <footer>
-        <hr/>
+        <hr />
         <div class="container">
             <div class="main-footer">
                 <div class="left-footer">
@@ -281,7 +292,7 @@
                 </div>
                 <div class="center-footer">
                     <div class="left-center">
-                        <h5 >Giới thiệu</h5>
+                        <h5>Giới thiệu</h5>
                         <ul>
                             <li>
                                 <a href="#">Về IVY moda</a>
@@ -378,11 +389,23 @@
         <hr />
         <h6>©MiniShop All rights reserved</h6>
     </footer>
-
+    <!-- link animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Boosrtap cnd -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>\

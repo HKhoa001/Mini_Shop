@@ -179,7 +179,7 @@ img.slider {
 
 .product-list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    position: relative;
     /* Tạo 4 cột, mỗi cột có kích thước bằng nhau */
     grid-gap: 25px;
     /* Khoảng cách giữa các ô là 25px */
@@ -187,8 +187,33 @@ img.slider {
 
 .cart-main {
     position:relative;
-    width: 256px;
     height: auto;
+}
+
+
+.name-new {
+    position: absolute;
+    top: 0;
+    left: -6px;
+    color: #fff;
+    font-size: 16px;
+    background-image: url("./images/item_new.png");
+    /* padding-top: 100%; */
+    background-repeat: no-repeat;
+    padding: 7px 18px 7px 15px;
+    border-top-right-radius: 23px;
+}
+
+.name-new::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 17px solid #D73831;
+    border-left: 7px solid transparent;
+    bottom: -16px;
+    left: 0px;
+    z-index: 9999;
 }
 
 .image-cart-2 {
@@ -266,6 +291,7 @@ img.slider {
     align-items: center;
     justify-content: center;
 }
+
 
 .see-all h3 {
     border-top-left-radius: 20px;
@@ -456,4 +482,25 @@ h6{
     color: #57585A;
     text-align: center;
     font-weight: 100;
+}
+
+/* demo hover block */
+.block-humen {
+    display: none;
+    margin-top: 30px;
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 999999999999999999999999999999;
+}
+
+.test-hover {
+    cursor: pointer;
+}
+
+.test-hover:hover .block-humen {
+    display: block;
 }
