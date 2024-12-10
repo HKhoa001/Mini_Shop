@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container-main">
             <div class="menu-main">
                 <div class="navigation">
                     <ul>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="search-account">
                     <form class="search">
-                        <input type="text" class="search-main" placeholder="T kiếm sản phẩm">
+                        <input type="text" class="search-main" placeholder="Tìm kiếm sản phẩm">
                     </form>
 
                     <div class="account">
@@ -60,164 +60,153 @@
         </div>
     </header>
     <main>
-        <div class="container">
-            <div class="sale-top">
-                <ul>
-                    <li style="background:#D73831"><a style="margin: 0 auto;">SALE OFF 50%</a></li>
-                    <li style="background:#DC633A"><a style="margin: 0 auto;">SALE OFF 30%</a></li>
-                    <li style="background:#D73831"><a style="margin: 0 auto;">LAST SALE TỪ 100K</a></li>
-                </ul>
+        <div class="container-main">
+            <div class="slider">
+                <div class="sale-top">
+                    <ul>
+                        <li style="background:#D73831"><a style="margin: 0 auto;">SALE OFF 50%</a></li>
+                        <li style="background:#DC633A"><a style="margin: 0 auto;">SALE OFF 30%</a></li>
+                        <li style="background:#D73831"><a style="margin: 0 auto;">LAST SALE TỪ 100K</a></li>
+                    </ul>
+                </div>
+
+                <!-- code swip -->
+                <div class="slider-sipwer">
+                    <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true"
+                        mousewheel="fale" autoplay-delay="1500" autoplay-disable-on-interaction="false" loop="true">
+
+                        <swiper-slide><a href="#">
+                                <div class="abs-test-img">
+                                    <img src="images/slider01.webp" alt="" class="slider">
+                                </div>
+                            </a></swiper-slide>
+                        <swiper-slide><a href="#">
+                                <div class="abs-test-img">
+                                    <img src="images/sale001.webp" alt="" class="slider">
+                                </div>
+                            </a></swiper-slide>
+                        <swiper-slide><a href="#">
+                                <div class="abs-test-img">
+                                    <img src="images/office.webp" alt="" class="slider">
+                                </div>
+                            </a></swiper-slide>
+                        <swiper-slide><a href="#">
+                                <div class="abs-test-img">
+                                    <img src="images/hersing.webp" alt="" class="slider">
+                                </div>
+                            </a></swiper-slide>
+
+                    </swiper-container>
+                </div>
             </div>
 
-            <!-- code swip -->
-            <div class="slider-sipwer">
-                <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="fale"
-                    autoplay-delay="1500" autoplay-disable-on-interaction="false" loop="true">
+            <div class="new-arrival">
 
-                    <swiper-slide><a href="#">
-                            <div class="abs-test-img">
-                                <img src="images/slider01.webp" alt="" class="slider">
-                            </div>
-                        </a></swiper-slide>
-                    <swiper-slide><a href="#">
-                            <div class="abs-test-img">
-                                <img src="images/sale001.webp" alt="" class="slider">
-                            </div>
-                        </a></swiper-slide>
-                    <swiper-slide><a href="#">
-                            <div class="abs-test-img">
-                                <img src="images/office.webp" alt="" class="slider">
-                            </div>
-                        </a></swiper-slide>
-                    <swiper-slide><a href="#">
-                            <div class="abs-test-img">
-                                <img src="images/hersing.webp" alt="" class="slider">
-                            </div>
-                        </a></swiper-slide>
+                <div class="title">
+                    <h2>New arrival</h2>
+                </div>
 
-                </swiper-container>
-            </div>
-
-
-            <div class="title">
-                <h2>New arrival</h2>
-            </div>
-
-
-            <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-md-4 col-lg-3  data-aos="fade-up"">
-                        <div class="product-list">
-                            <div class="cart-main">
-                                <div class="carrt-image-main">
-                                    <div href="#" class="image-cart-1">
-                                        <img src="images\new010.webp" alt="Ảnh 1">
-                                    </div>
-                                    <div href="#" class="image-cart-2">
-                                        <img src="images\new011.webp" alt="Ảnh 1">
-                                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3  data-aos=" fade-up>
+                        <div class="cart-main">
+                            <div class="carrt-image-main">
+                                <div href="#" class="image-cart-1">
+                                    <img src="images\new020.webp" alt="Ảnh 1">
                                 </div>
-                                <div class="cart-title">
-                                    <div class="style-cart">
-                                        <div class="color">
-                                            <input type="checkbox">
-                                            <input type="checkbox">
-                                        </div>
-                                        <i class='bx bx-heart'></i>
-                                    </div>
-                                    <h4 class="name-cart">Áo sơ mi họa tiết Eclat</h4>
-                                    <div class="price-product">
-                                        <span>1.090.000<sup>đ</sup></span>
-                                        <a class="add-to-cart">
-                                            <i class='bx bx-shopping-bag'></i>
-                                        </a>
-                                    </div>
+                                <div href="#" class="image-cart-2">
+                                    <img src="images\new021.webp" alt="Ảnh 1">
                                 </div>
-
                             </div>
-                            <div class="name-new">NEW</div>
-
-
+                            <div class="cart-title">
+                                <div class="style-cart">
+                                    <div class="color">
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                    </div>
+                                    <i class='bx bx-heart'></i>
+                                </div>
+                                <h4 class="name-cart">Áo sơ mi họa tiết Eclat</h4>
+                                <div class="price-product">
+                                    <span>1.090.000<sup>đ</sup></span>
+                                    <a class="add-to-cart">
+                                        <i class='bx bx-shopping-bag'></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item-new">NEW</div>
                         </div>
                     </div>
 
+                </div>
 
-
-
-
+                <div class="see-all">
+                    <h3>Xem tất cả</h3>
                 </div>
             </div>
 
+            <div class="best-seller">
 
+                <div class="title"><a>BEST SELLER</a></div>
 
-
-            <div class="see-all">
-                <h3>Xem tất cả</h3>
-            </div>
-
-            <div class="title"  data-aos="fade-up"><a>BEST SELLER</a></div>
-
-            <div class="product-list">
-                <div class="cart-main">
-                    <div class="carrt-image-main">
-                        <a href="#" class="image-cart-1">
-                            <img src="images\new010.webp" alt="Ảnh 1">
-                        </a>
-                        <a href="#" class="image-cart-2">
-                            <img src="images\new011.webp" alt="Ảnh 1">
-                        </a>
-                    </div>
-                    <div class="cart-title">
-                        <div class="style-cart">
-                            <div class="color">
-                                <input type="checkbox">
-                                <input type="checkbox">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3  data-aos=" fade-up>
+                        <div class="cart-main">
+                            <div class="image-cart">
+                                <div href="#" class="image-cart-1">
+                                    <img src="images\new010.webp" alt="Ảnh 1">
+                                </div>
+                                <div href="#" class="image-cart-2">
+                                    <img src="images\new011.webp" alt="Ảnh 1">
+                                </div>
                             </div>
-                            <i class='bx bx-heart'></i>
-                        </div>
-                        <h4 class="name-cart">Áo sơ mi họa tiết Eclat</h4>
-                        <div class="price-product">
-                            <span>1.090.000<sup>đ</sup></span>
-                            <a class="add-to-cart">
-                                <i class='bx bx-shopping-bag'></i>
-                            </a>
+                            <div class="cart-title">
+                                <div class="style-cart">
+                                    <div class="color">
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                    </div>
+                                    <i class='bx bx-heart'></i>
+                                </div>
+                                <h4 class="name-cart">Áo sơ mi họa tiết Eclat</h4>
+                                <div class="price-product">
+                                    <span>1.090.000<sup>đ</sup></span>
+                                    <a class="add-to-cart">
+                                        <i class='bx bx-shopping-bag'></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item-seller">Best Seller</div>
                         </div>
                     </div>
                 </div>
-
-                <a href="" class="product">
-                    <img src="images\new020.webp" alt="Ảnh 2">
-                </a>
-                <a href="" class="product">
-                    <img src="images\new020.webp" alt="Ảnh 3">
-                </a>
-                <a href="" class="product">
-                    <img src="images\new020.webp" alt="Ảnh 4">
-                </a>
-                <a href="" class="product">
-                    <img src="images\new020.webp" alt="Ảnh 5">
-                </a>
             </div>
-
-            <div class="see-all">
-                <h3>Xem tất cả</h3>
-            </div>
-
-            <div class="title"  data-aos="fade-up"><a>Fall/ Winter New Collection 2024</a></div>
 
             <div class="collection-list">
-                <a href="" class="collection">
-                    <img src="images\BST01.webp" alt="Ảnh 1" class="BST">
-                </a>
-                <a href="" class="collection">
-                    <img src="images\BST02.webp" alt="Ảnh 2" class="BST">
-                </a>
-                <a href="" class="collection">
-                    <img src="images\BST03.webp" alt="Ảnh 3" class="BST">
-                </a>
-                <a href="" class="collection">
-                    <img src="images\BST04.webp" alt="Ảnh 4" class="BST">
-                </a>
+
+                <div class="title"><a>Fall/ Winter New Collection 2024</a></div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3  data-aos=" fade-up>
+                        <a href="" class="collection">
+                            <img src="images\BST01.webp" alt="Ảnh 1" class="BST">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3  data-aos=" fade-up>
+                        <a href="" class="collection">
+                            <img src="images\BST02.webp" alt="Ảnh 2" class="BST">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3  data-aos=" fade-up>
+                        <a href="" class="collection">
+                            <img src="images\BST03.webp" alt="Ảnh 3" class="BST">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3  data-aos=" fade-up>
+                        <a href="" class="collection">
+                            <img src="images\BST04.webp" alt="Ảnh 4" class="BST">
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div class="sale">
@@ -236,9 +225,10 @@
 
         </div>
     </main>
+
     <footer>
         <hr />
-        <div class="container">
+        <div class="container-main">
             <div class="main-footer">
                 <div class="left-footer">
                     <div class="top-left">
