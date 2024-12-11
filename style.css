@@ -41,12 +41,11 @@ ul {
     border-bottom: 1px solid #d1d0d0;
 }
 
-.navigation ul li {
+.menu {
     font-size: 14px;
     margin-right: 15px;
     padding: 15px 0;
     font-weight: 600;
-    text-transform: uppercase;
 }
 
 img.logo {
@@ -58,13 +57,18 @@ img.logo {
     transform: translate(-50%, -60%);
 }
 
+.search {
+    position:relative;
+    display: flex;
+}
+
 .search-main {
     height: 40px;
     width: 240px;
     outline: none;
     border: 1px solid #e2e2e2;
     border-radius: 7px;
-    padding: 0 10px;
+    padding-left: 40px;
     font-size: 14px;
 }
 
@@ -81,6 +85,18 @@ img.logo {
 
 .search-account {
     gap: 100px;
+}
+
+.search button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none;
+    cursor: pointer;
+    font-size: 22px;
 }
 
 .account ul {
@@ -315,10 +331,11 @@ img.BST {
     margin-bottom: 30px;
 }
 
-.sale {
+.sale-main {
     width: 100%;
     height: auto;
     margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 img.sale {
@@ -344,13 +361,9 @@ img.sale1 {
     border-bottom-right-radius: 45px;
 }
 
-hr{
-    margin: 50px 0 ;
-}
-
 .main-footer{
     display: flex;
-    margin-bottom: 30px;
+    margin:60px 0 25px 0;
 }
 
 .left-footer{
@@ -471,15 +484,23 @@ img.link-white{
 }
 
 h6{
-    margin-top: -30px;
-    font-size: 16px;
-    color: #57585A;
+    margin-top: 30px !important;
+    font-size: 16px !important;
+    color: #57585A !important;
     text-align: center;
-    font-weight: 100;
+    font-weight: 400 !important;
 }
 
-/* demo hover block */
-.block-humen {
+/* demo sup menu */
+.menu {
+    cursor: pointer;
+}
+
+.menu:hover .sup-menu {
+    display: block;
+}
+
+.sup-menu {
     display: none;
     margin-top: 30px;
     padding: 24px;
@@ -492,11 +513,88 @@ h6{
     z-index: 10;
 }
 
-.test-hover {
-    cursor: pointer;
+.list-menu{
+    display: flex;
 }
 
-.test-hover:hover .block-humen {
+.list-menu ul {
     display: block;
+    margin-right: 70px;
 }
+
+h2{
+    
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 16px !important;
+    color: #221F20 ;
+    display: block !important;
+    margin-bottom: 24px !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.list-menu ul li a{
+    text-decoration: none;
+    font-size: 14px ;
+    line-height: 16px ;
+    color: #67696b !important;
+    display: block ;
+    margin-bottom: 16px ; 
+    font-weight: 1 ;   
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+/* Sản Phẩm */
+
+.product-main{
+    display: flex;  
+    margin-top: 46px;
+}
+
+.filter{
+    width: 270px;
+    height: 3200px;
+}
+
+.status-filter li {
+    border-bottom: 1px solid #e8eaeb;
+    margin-bottom: 16px;
+    font-size: 16px;    
+    line-height: 20px;
+    color: #221F20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.status-filter li a{
+    line-height: 20px;
+    margin-bottom: 18px;
+}
+
+.button-filter li button{
+    font-size: 13px;
+    padding: 12px 23px;
+    background-color: white;
+    border: 1px solid #221f20;
+    color: #221f20;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.list-product{
+    width: calc(100% - 256px);
+    padding-left: 30px;
+}
+
+.top-product-main{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #221F20;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+
 
