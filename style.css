@@ -510,6 +510,7 @@ h6{
     border: 1px solid #E7E8E9;
     position: absolute;
     top: 20px;
+    left: 0;
     z-index: 10;
 }
 
@@ -546,6 +547,7 @@ h2{
 
 
 /* Sản Phẩm */
+
 
 .product-main{
     display: flex;  
