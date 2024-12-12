@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .image-container {
+    position: relative;
+    width: 430px;
+    height: 640px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    transition: transform 0.2s ease, top 0.2s ease, left 0.2s ease;
+  }
+
+  .image-container {
+    cursor: crosshair;
+  }
+
+  .image-container:hover img {
+    transform: scale(1.5);
+  }

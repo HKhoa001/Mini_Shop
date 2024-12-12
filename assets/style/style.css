@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +8,8 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
 }
 
 img {
@@ -263,7 +263,7 @@ swiper-container.mySwiper {
     font-size: 14px;
     font-weight: 600;
     line-height: 16px;
-    background-image: url("./images/item_new.png");
+    background-image: url("/assets/images/item_new.png");
     background-repeat: no-repeat;
     padding: 7px 21px 7px 17px;
     border-top-right-radius: 20px;
@@ -289,7 +289,7 @@ swiper-container.mySwiper {
     font-size: 14px;
     font-weight: 600;
     line-height: 16px;
-    background-image: url("./images/item_seller.png");
+    background-image: url("/assets/images/item_seller.png");
     background-repeat: no-repeat;
     padding: 7px 21px 7px 17px;
     border-bottom-right-radius: 20px 25px;
@@ -548,71 +548,145 @@ h2{
     font-family: 'Montserrat', sans-serif !important;
 }
 
-
-/*Danh Sách Sản Phẩm */
-
-
-.product-main{
-    display: flex;  
-    margin-top: 46px;
+.shopping-cart-main {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    background-color: #fff;
+    border: 1px solid #a3a3a3;
+    min-width: 400px;
+    z-index: 999999999999999999999999999999;
+    padding: 20px;
+    transition: right 0.3s ease;
 }
 
-.filter{
-    width: 270px;
-    height: 3200px;
+.shopping-cart-main.visible {
+    right: 0;
 }
 
-.status-filter li {
-    border-bottom: 1px solid #e8eaeb;
-    margin-bottom: 16px;
-    font-size: 16px;    
-    line-height: 20px;
-    color: #221F20;
+
+.shopping-cart-total {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.status-filter li a{
-    line-height: 20px;
-    margin-bottom: 18px;
+.cart-total-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.button-filter li button{
-    font-size: 13px;
-    padding: 12px 23px;
-    background-color: white;
-    border: 1px solid #221f20;
-    color: #221f20;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-.list-product{
-    width: calc(100% - 256px);
-    padding-left: 30px;
-}
-
-.top-product-main{
+.cart-total-name span {
+    background-color: #221F20;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 17px;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    color: #221F20;
-    text-transform: uppercase;
-    margin-bottom: 26px;
+    margin-left: 10px
+}
+
+.shopping-cart-product {
+    height: 500px;
+}
+
+.img-carrt-item {
+    width: 70px;
+}
+
+.img-carrt-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.title-cart-shopping {
+    margin-left: 15px;
+    width: 100%;
+}
+
+.title-cart-shopping h5,
+.title-cart-shopping span,
+.title-cart-shopping p {
+    margin-bottom: 0;
+}
+
+.cart-shopping-item {
+    display: flex;
+}
+
+.total-price-shopping {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.shopping-cart-total i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.count-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 
-/* Sản Phẩm */
-.product-img {
-    width: 38%;
-    height: auto;   
-    margin: 0 15px;
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-.list-product-img{
-    width: 8%;
+.quantity button {
+    width: 23px;
+    height: 23px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.swiper-wrapper{}
+.quantity button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
 
+.quantity .value-display {
+    width: 30px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 30px;
+    background-color: #f9f9f9;
+}
+
+.quantity button:focus, .quantity .value-display:focus {
+    outline: 2px solid #007bff;
+}
+
+  .total-price-quan {
+    color: red;
+    font-size: 17px;
+    font-weight: 500;
+  }

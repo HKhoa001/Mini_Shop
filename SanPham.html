@@ -4,142 +4,200 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <link rel="stylesheet" href="assets/style/SanPham.css">
+  <link rel="shortcut icon" href="https://image-mini-shop.vercel.app/logowebsite1.png" type="image/x-icon">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="shortcut icon" href="./images/logowebsite.jpg" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <title>MINI SHOP</title>
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>MINI SHOP</title>
 </head>
 
 <body>
-    <main>
-        <div class="container-main">
-            <div class="product-main">
-                <div class="product-img">
-                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                          </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                      </div>
+  <main>
+    <div class="container-main">
+      <div class="product-main">
+        <div class="list-product-img">
+          <div class="product-img-1">
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="image-container">
+                    <img src="./assets/images/sp001.webp" alt="Product Image">
+                  </div>
                 </div>
-                <div class="list-product-img">
-                    <div thumbsSlider="" class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                          </div>
-                        </div>
-                      </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/sp002.webp" />
                 </div>
-                <div>
-                    
+                <div class="swiper-slide">
+                  <img src="./assets/images/sp003.webp" />
                 </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/sp004.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/sp005.webp" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
+          </div>
+          <div class="list-product-2">
+            <div thumbsSlider="" class="swiper mySwiper">
+              <div class="swiper-wrapper" style="margin: 30px 0 ;max-width: 110px; max-height: 700px !important;">
+                <div class="swiper-slide">
+                  <img src="./assets/images/sp001.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/sp002.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/sp003.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/sp004.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/sp005.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </main>
 
-    <!-- link animation -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <div class="product-title">
+          <h1 class="title-sp">ÁO SƠ MI TENCEL DIVAS</h1>
+          <div class="sub-code">
+            <p>
+              SKU: <span>17B9954</span>
+            </p>
+          </div>
+          <div class="price-sp">
+            <a>990.000đ</a>
+          </div>
+          <div class="color-sp" style="">
+            <a>Màu sắc: Be</a>
+            <div class="list-color">
+              <a class="item-color">
+              </a>
+            </div>
+          </div>
+          <div class="list-size">
+            <ul>
+              <li><a class="size">S</a></li>
+              <li><a class="size">M</a></li>
+              <li><a class="size">L</a></li>
+              <li><a class="size">XL</a></li>
+              <li><a class="size">XXL</a></li>
+            </ul>
+          </div>
+          <div class="size-tables">
+            <i class='bx bx-link-external'></i>
+            <a>Kiểm tra size của bạn</a>
+            <div class="sup-size-tables">
+              <ul>
+                <li class=" " data-tab="tab-1">Nam</li>
+                <li class=" " data-tab="tab-2">Nữ</li>
+                <li class=" " data-tab="tab-3">Trẻ Em</li>
+                <li class="" data-tab="tab-4">Giầy Kids</li>
+                <li class=" " data-tab="tab-5">Mini Secret</li>
+              </ul>
+            </div>
+          </div>
+          <div class="quantity-sp">
+            Số Lượng
+            <div class="count-sp">
+              <a class="count-sp-1">-</a>
+              <span class="value-display-1">1</span>
+              <a class="count-sp-1">+</a>
+            </div>
+          </div>
+          <ul class="button-buy">
+            <li>
+              <a style="background-color: black;color: #f7f8f9;">THÊM VÀO GIỎ</a>
+              <a> MUA HÀNG </a>
+              <a><i class='bx bx-heart' style="font-size: 20px;"></i></a>
+            </li>
+          </ul>
+          <div>
 
-    <!-- Boosrtap cnd -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    
-        <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        spaceBetween: 10,
-        slidesPerView: 4,
-        freeMode: true,
-        watchSlidesProgress: true,
-      });
-      var swiper2 = new Swiper(".mySwiper2", {
-        loop: true,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-          swiper: swiper,
-        },
-      });
-    </script>
+          </div>
+          <div>chi tiết sản phẩm </div>
+        </div>
+
+      </div>
+
+      <div class="new-arrival">
+
+        <div class="title">
+          <a>New arrival</a>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3  data-aos=" fade-up>
+            <div class="cart-main">
+              <a href="SanPham.html" class="carrt-image-main">
+                <div href="#" class="image-cart-1">
+                  <img src="./assets/images/new020.webp" alt="Ảnh 1">
+                </div>
+                <div href="#" class="image-cart-2">
+                  <img src="./assets/images/new021.webp" alt="Ảnh 1">
+                </div>
+              </a>
+              <div class="cart-title">
+                <div class="style-cart">
+                  <div class="color">
+                    <input type="checkbox">
+                    <input type="checkbox">
+                  </div>
+                  <i class='bx bx-heart'></i>
+                </div>
+                <h4 class="name-cart">Áo sơ mi họa tiết Eclat</h4>
+                <div class="price-product">
+                  <span>1.090.000<sup>đ</sup></span>
+                  <a class="add-to-cart">
+                    <i class='bx bx-shopping-bag'></i>
+                  </a>
+                </div>
+              </div>
+              <div class="item-new">NEW</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="see-all">
+          <h3>Xem tất cả</h3>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- link animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Boosrtap cnd -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script src="./assets/main/SanPham.js"></script>
 
 </body>
 
