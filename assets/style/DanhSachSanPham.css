@@ -9,7 +9,7 @@
 }
 
 .status-filter li {
-    border-bottom: 1px solid #e8eaeb;
+    border-bottom: 1px solid #e7e8e9;
     margin-bottom: 16px;
     font-size: 16px;    
     line-height: 20px;
@@ -24,14 +24,44 @@
     margin-bottom: 18px;
 }
 
-.button-filter li button{
+.button-filter li{
+    display: flex;
+}
+
+.button-cart-1{
     font-size: 13px;
     padding: 12px 23px;
-    background-color: white;
-    border: 1px solid #221f20;
+    background-color: #f7f8f9;
     color: #221f20;
+    border: 1px solid #221f20;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    margin: 0 20px;
+    font-weight: 400;
+}
+
+.button-cart-2{
+    font-size: 13px;
+    padding: 12px 23px;
+    background-color: #221f20;
+    color: #f7f8f9 !important;
+    border: 1px solid #221F20;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: 0 20px;
+    font-weight: 400;
+}
+
+.button-cart-1:hover {
+    background-color: #221f20 ;
+    color: #f7f8f9 !important;
+    border: 1px solid #221F20 ;
+}
+
+.button-cart-2:hover {
+    background-color: #f7f8f9 ;
+    color: #221f20 !important;
+    border-color: #221f20 ;
 }
 
 .list-product{
