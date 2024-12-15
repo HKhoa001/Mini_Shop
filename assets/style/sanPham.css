@@ -1,5 +1,5 @@
 body{    
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Montserrat', sans-serif;
 }
 .product-main{
     display: flex;  
@@ -66,6 +66,7 @@ transform: scale(1.5);
     font-size: 30px ;
     line-height: 32px ;
     color: #221f20 ;
+    text-transform: uppercase;
 }
 
 .sub-code{
@@ -185,18 +186,55 @@ transform: scale(1.5);
     margin-top: 24px;
 }
 
-.button-buy li a{
-    text-transform: uppercase;
+.black-button{
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     height: 48px;
     cursor: pointer;
-    padding: 15px;
+    padding: 12px 15px 15px 15px;
     border-radius: 16px 0px;
     border: 1px solid #221f20;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #f7f8f9 !important;
+    background-color: #221f20;
     margin: 0 8px;
+}
+
+.black-button:hover {
+    background-color: #f7f8f9 !important;
+    color: #221f20 !important;
+    border-color: #221f20 !important;
+}
+
+.white-button{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    height: 48px;
+    cursor: pointer;
+    padding: 12px 15px 15px 15px;
+    border-radius: 16px 0px;
+    background-color: white;
+    border: 1px solid #221f20;
+    color: #221f20;
+    margin: 0 8px;
+}
+
+.white-button:hover {
+    border: 1px solid #221f20;
+    color: #f7f8f9 !important;
+    background-color: #221f20;
+}
+
+.product-information-type{
+    border-top: 1px solid #e7e8e9;
+    border-bottom: 1px solid #e7e8e9;
+    margin-top: 48px;
+    padding: 40px 0 16px 0;
+}
+
+.product-information{
+    border-bottom: 1px solid #e7e8e9;
+    padding: 24px 0;
+    min-height: 130px;
 }

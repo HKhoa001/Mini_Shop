@@ -199,25 +199,25 @@ swiper-container.mySwiper {
     text-align: center
 }
 
-.cart-main {
+.card-main {
     position:relative;
     height: auto;
 }
 
-.carrt-image-2 {
+.card-image-2 {
     display: none;
     transition: all .3s ease-in-out;
 }
 
-.carrt-image-main:hover .carrt-image-1 {
+.card-image-main:hover .card-image-1 {
     display: none;
 }
 
-.carrt-image-main:hover .carrt-image-2 {
+.card-image-main:hover .card-image-2 {
     display: block;
 }
 
-.style-cart,
+.style-card,
 .price-product {
     height: 24px;
     margin: 10px 0px;
@@ -230,12 +230,12 @@ swiper-container.mySwiper {
     color: #3e3e3f;
 }
 
-.style-cart i{
+.style-card i{
     font-size: 18px;
     color: #6c6d70;
 }
 
-.name-cart {
+.name-card {
     color: #57585A;
     font-size: 14px;
     line-height: 16px;
@@ -563,7 +563,7 @@ h2{
     font-family: 'Montserrat', sans-serif !important;
 }
 
-.shopping-cart-main {
+.shopping-cart-icon {
     position: fixed;
     top: 0;
     right: -100%;
@@ -576,7 +576,7 @@ h2{
     transition: right 0.3s ease;
 }
 
-.shopping-cart-main.visible {
+.shopping-cart-icon.visible {
     right: 0;
 }
 
@@ -623,7 +623,7 @@ h2{
     /* overflow-y: auto; */
 }
 
-.img-carrt-item {
+.img-card-item {
     width: 64px ;
     height: 96px;
 }
@@ -720,7 +720,7 @@ text-decoration: none;
 color: #AC2F33;
 }
 
-.bot-shopping-cart-main{
+.bot-shopping-cart-icon{
     position: absolute;
     bottom: 5px;
     left: 0;
@@ -766,7 +766,7 @@ color: #AC2F33;
     background: #ffffff !important;
 }
 
-.login-cart{
+.login-card{
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -779,7 +779,7 @@ color: #AC2F33;
     border: 1px solid #0A0A0B;
 }
 
-.login-cart:hover {
+.login-card:hover {
     color: #FFFFFF !important;
     background: #0A0A0B;
 }

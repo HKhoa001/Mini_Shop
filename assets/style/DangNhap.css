@@ -1,9 +1,8 @@
 
 body{
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 24px;
-    margin-bottom: 0;
     color: #6c6d70;
     text-align: center;
 }
@@ -37,7 +36,7 @@ body{
     max-width: 100%;
 }
 
-.input-cart{
+.input-card{
     border: 1px solid #E7E8E9;
     border-radius: 4px;
     padding: 15px;
@@ -49,7 +48,7 @@ body{
     margin-bottom: 24px;
 }
 
-.button-cart{
+.black-button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +64,7 @@ body{
     margin-top: 30px;
 }
 
-.button-cart:hover {
+.black-button:hover {
     background-color: #f7f8f9 !important;
     color: #221f20 !important;
     border-color: #221f20 !important;
